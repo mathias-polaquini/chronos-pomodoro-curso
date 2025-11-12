@@ -71,3 +71,13 @@ export default defineConfig([
   },
 ])
 ```
+
+a pasta node_modules é a pasta de dependencias do node, e essas dependencias estão no package.jason
+
+a pasta public serve pra jogar arquivos e depois serem usadas, por exemplo imagens, audio, e pode ser acessada usando o /
+
+tsconfig.json é o aquivo de configurações do type script
+
+
+
+um componente do react normalmente é uma função que retorna jsx
