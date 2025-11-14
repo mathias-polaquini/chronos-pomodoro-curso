@@ -1,35 +1,20 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+//Componentes de react se adota a nomenclatura PascalCase
+//App com as primeiras letras maiusculas
+import { Heading } from './components/Heading'
 
-function App() {
-  const [count, setCount] = useState(0)
+import './styles/theme.css'
+import './styles/global.css'
 
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Alterei aqui</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+
+export function App(){
+    return(
+        //JSX só pode retornar um elemento, por isso que da erro se não deixar o h1 e o p dentro de uma div ( se você fizer <> voce cria um elemento vazio para ficar meno poluido)
+        <>
+            <Heading/>
+            <p>Este testo esta presente dentro de um paragrafo no componente App.tsx e esta sendo chamado pelo import QualquerCoisa pois na hora de importar podemos dar o nome que agente quiser</p>
+        </>
+
+    ) 
 }
 
-export default App
+export default App;
